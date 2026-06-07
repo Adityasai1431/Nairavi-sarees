@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NAIRAVI Sarees – Elegance Woven Into Every Thread. Explore premium silk, cotton, Banarasi, Kanjivaram and designer sarees." />
+  <meta name="keywords" content="sarees, silk sarees, Banarasi, Kanjivaram, wedding sarees, designer sarees, NAIRAVI" />
+  <title>NAIRAVI Sarees – Elegance Woven Into Every Thread</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-logo"><span class="logo-highlight">N</span>AIRAVI</div>
+      <p class="loader-tagline">Elegance Woven Into Every Thread</p>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-symbol">&#10022;</span>
+        <span class="logo-text"><span class="logo-highlight">N</span>AIRAVI <span class="logo-sub">Sarees</span></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#new-arrivals" class="nav-link">New Arrivals</a>
+        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="nav-link nav-whatsapp"><i class="fab fa-whatsapp"></i> Shop via WhatsApp</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn-contact-nav">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section id="home" class="hero-section">
+    <div class="slider-wrapper" id="heroSlider">
+      <div class="slide active" style="background-image:url('https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg?auto=compress&cs=tinysrgb&w=1920')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="slide-eyebrow">New Season Collection</p>
+          <h1 class="slide-title">Timeless<br><em>Elegance</em></h1>
+          <p class="slide-sub">Discover handcrafted sarees designed for every occasion.</p>
+          <div class="slide-btns">
+            <a href="#collections" class="btn-primary">Shop Collection</a>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=1920')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="slide-eyebrow">Heritage &amp; Craftsmanship</p>
+          <h1 class="slide-title">Tradition Meets<br><em>Luxury</em></h1>
+          <p class="slide-sub">Premium sarees woven with heritage and style.</p>
+          <div class="slide-btns">
+            <a href="#collections" class="btn-primary">Explore Collection</a>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('https://images.pexels.com/photos/3622614/pexels-photo-3622614.jpeg?auto=compress&cs=tinysrgb&w=1920')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="slide-eyebrow">Wedding &amp; Festive</p>
+          <h1 class="slide-title">Celebrate Every<br><em>Moment</em></h1>
+          <p class="slide-sub">Wedding, festive and designer sarees curated for you.</p>
+          <div class="slide-btns">
+            <a href="#collections" class="btn-primary">View Collection</a>
+            <a href="#contact" class="btn-secondary"><i class="fas fa-envelope"></i> Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="slider-arrow prev" id="heroPrev" aria-label="Previous slide">&#8249;</button>
+    <button class="slider-arrow next" id="heroNext" aria-label="Next slide">&#8250;</button>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="categories" class="section categories-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Browse By Style</p>
+        <h2 class="section-title">Our <em>Collections</em></h2>
+        <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+      </div>
+      <div class="categories-grid" id="categoriesGrid"></div>
+    </div>
+  </section>
+
+  <!-- SEARCH -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-box reveal">
+        <div class="search-header">
+          <h2>Find Your <em>Perfect Saree</em></h2>
+          <p>Search by name, category, or color — results update instantly.</p>
+        </div>
+        <div class="search-bar-wrap">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="searchInput" placeholder="Search sarees, silk, Kanjivaram, blue..." autocomplete="off" />
+          <button id="clearSearch" class="clear-btn" aria-label="Clear search"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="filter-tags" id="filterTags">
+          <button class="filter-tag active" data-filter="all">All</button>
+          <button class="filter-tag" data-filter="Silk Sarees">Silk</button>
+          <button class="filter-tag" data-filter="Cotton Sarees">Cotton</button>
+          <button class="filter-tag" data-filter="Banarasi Sarees">Banarasi</button>
+          <button class="filter-tag" data-filter="Kanjivaram Sarees">Kanjivaram</button>
+          <button class="filter-tag" data-filter="Wedding Sarees">Wedding</button>
+          <button class="filter-tag" data-filter="Designer Sarees">Designer</button>
+          <button class="filter-tag" data-filter="Party Wear Sarees">Party Wear</button>
+          <button class="filter-tag" data-filter="Traditional Sarees">Traditional</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT COLLECTION -->
+  <section id="collections" class="section products-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Handpicked For You</p>
+        <h2 class="section-title">Our <em>Saree Collection</em></h2>
+        <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+      <p class="no-results" id="noResults" style="display:none;">No sarees found. Try a different search or category.</p>
+    </div>
+  </section>
+
+  <!-- TRENDING CAROUSEL -->
+  <section id="new-arrivals" class="section carousel-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Latest Picks</p>
+        <h2 class="section-title">Trending <em>Collections</em></h2>
+        <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+      </div>
+    </div>
+    <div class="carousel-track-container">
+      <div class="carousel-track" id="carouselTrack"></div>
+    </div>
+  </section>
+
+  <!-- QR BANNER -->
+  <section class="qr-banner-section">
+    <div class="qr-bg" style="background-image:url('https://images.pexels.com/photos/1381556/pexels-photo-1381556.jpeg?auto=compress&cs=tinysrgb&w=1920')">
+      <div class="qr-overlay"></div>
+      <div class="container">
+        <div class="qr-inner reveal">
+          <div class="qr-text">
+            <div class="qr-badge"><i class="fab fa-whatsapp"></i> WhatsApp Shopping</div>
+            <h2>Shop Directly Through<br><em>WhatsApp</em></h2>
+            <p>Scan the QR code or tap the button below to browse our latest collections instantly. No app needed — just a quick chat.</p>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn-whatsapp-large"><i class="fab fa-whatsapp"></i> Chat With Us</a>
+          </div>
+          <div class="qr-card">
+            <div class="qr-placeholder">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="170" height="170">
+                <rect width="200" height="200" fill="white" rx="8"/>
+                <rect x="10" y="10" width="60" height="60" fill="none" stroke="#6D071A" stroke-width="8"/>
+                <rect x="22" y="22" width="36" height="36" fill="#6D071A"/>
+                <rect x="130" y="10" width="60" height="60" fill="none" stroke="#6D071A" stroke-width="8"/>
+                <rect x="142" y="22" width="36" height="36" fill="#6D071A"/>
+                <rect x="10" y="130" width="60" height="60" fill="none" stroke="#6D071A" stroke-width="8"/>
+                <rect x="22" y="142" width="36" height="36" fill="#6D071A"/>
+                <rect x="85" y="10" width="10" height="10" fill="#6D071A"/>
+                <rect x="100" y="10" width="10" height="10" fill="#D4AF37"/>
+                <rect x="115" y="10" width="10" height="10" fill="#6D071A"/>
+                <rect x="85" y="25" width="10" height="10" fill="#D4AF37"/>
+                <rect x="115" y="25" width="10" height="10" fill="#6D071A"/>
+                <rect x="100" y="40" width="10" height="10" fill="#6D071A"/>
+                <rect x="85" y="55" width="10" height="10" fill="#6D071A"/>
+                <rect x="115" y="55" width="10" height="10" fill="#D4AF37"/>
+                <rect x="130" y="85" width="10" height="10" fill="#6D071A"/>
+                <rect x="145" y="85" width="10" height="10" fill="#D4AF37"/>
+                <rect x="165" y="85" width="10" height="10" fill="#6D071A"/>
+                <rect x="180" y="85" width="10" height="10" fill="#6D071A"/>
+                <rect x="130" y="100" width="10" height="10" fill="#D4AF37"/>
+                <rect x="165" y="100" width="10" height="10" fill="#6D071A"/>
+                <rect x="145" y="115" width="10" height="10" fill="#6D071A"/>
+                <rect x="180" y="115" width="10" height="10" fill="#D4AF37"/>
+                <rect x="130" y="130" width="10" height="10" fill="#6D071A"/>
+                <rect x="155" y="130" width="10" height="10" fill="#D4AF37"/>
+                <rect x="170" y="145" width="10" height="10" fill="#6D071A"/>
+                <rect x="140" y="160" width="10" height="10" fill="#6D071A"/>
+                <rect x="165" y="160" width="10" height="10" fill="#D4AF37"/>
+                <rect x="180" y="160" width="10" height="10" fill="#6D071A"/>
+                <rect x="10" y="85" width="10" height="10" fill="#6D071A"/>
+                <rect x="25" y="85" width="10" height="10" fill="#D4AF37"/>
+                <rect x="45" y="85" width="10" height="10" fill="#6D071A"/>
+                <rect x="60" y="85" width="10" height="10" fill="#6D071A"/>
+                <rect x="10" y="100" width="10" height="10" fill="#D4AF37"/>
+                <rect x="45" y="100" width="10" height="10" fill="#6D071A"/>
+                <rect x="60" y="115" width="10" height="10" fill="#D4AF37"/>
+                <rect x="85" y="85" width="10" height="10" fill="#6D071A"/>
+                <rect x="100" y="85" width="10" height="10" fill="#D4AF37"/>
+                <rect x="115" y="85" width="10" height="10" fill="#6D071A"/>
+                <rect x="85" y="100" width="10" height="10" fill="#D4AF37"/>
+                <rect x="115" y="100" width="10" height="10" fill="#6D071A"/>
+                <rect x="85" y="115" width="10" height="10" fill="#6D071A"/>
+                <rect x="100" y="115" width="10" height="10" fill="#D4AF37"/>
+                <rect x="88" y="128" width="24" height="24" fill="#FAF7F0" rx="3"/>
+                <text x="100" y="145" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#6D071A">N</text>
+              </svg>
+              <p class="qr-scan-text">Scan to Order on WhatsApp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Promise</p>
+        <h2 class="section-title">Why Choose <em>NAIRAVI</em></h2>
+        <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal"><div class="why-icon"><i class="fas fa-gem"></i></div><h3>Premium Quality Fabrics</h3><p>Every saree is crafted using the finest fabrics sourced from renowned weavers across India.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fas fa-hand-sparkles"></i></div><h3>Handpicked Collections</h3><p>Each piece is personally curated by our design team for exceptional taste and elegance.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fas fa-headset"></i></div><h3>Trusted Customer Service</h3><p>Our dedicated team ensures every customer receives personal and prompt assistance.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fab fa-whatsapp"></i></div><h3>Direct WhatsApp Ordering</h3><p>Order directly via WhatsApp for a seamless, personal shopping experience.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fas fa-star"></i></div><h3>Latest Fashion Trends</h3><p>Our collections are constantly refreshed with the most fashionable saree designs each season.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fas fa-shield-alt"></i></div><h3>Secure &amp; Private</h3><p>Your conversations are confidential — we value your privacy at every step.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Happy Customers</p>
+        <h2 class="section-title">What They <em>Say</em></h2>
+        <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+      </div>
+      <div class="testimonial-slider-wrap">
+        <div class="testimonial-track" id="testimonialTrack"></div>
+        <button class="t-arrow t-prev" id="tPrev" aria-label="Previous">&#8249;</button>
+        <button class="t-arrow t-next" id="tNext" aria-label="Next">&#8250;</button>
+        <div class="t-dots" id="tDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title">Contact <em>Us</em></h2>
+        <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Connect</h3>
+          <p class="contact-desc">We'd love to help you find your perfect saree. Reach out through any of the channels below.</p>
+          <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><p class="ci-label">Phone</p><p class="ci-val">+91 XXXXX XXXXX</p></div></div>
+          <div class="contact-item"><div class="contact-icon ci-wa"><i class="fab fa-whatsapp"></i></div><div><p class="ci-label">WhatsApp</p><p class="ci-val">+91 XXXXX XXXXX</p></div></div>
+          <div class="contact-item"><div class="contact-icon ci-em"><i class="fas fa-envelope"></i></div><div><p class="ci-label">Email</p><p class="ci-val">hello@nairavi.in</p></div></div>
+          <div class="contact-item"><div class="contact-icon ci-loc"><i class="fas fa-map-marker-alt"></i></div><div><p class="ci-label">Location</p><p class="ci-val">Chennai, Tamil Nadu, India</p></div></div>
+          <div class="contact-social">
+            <a href="#" class="social-btn ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="social-btn wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" class="contact-form" novalidate>
+            <h3>Send Us a Message</h3>
+            <div class="form-group"><label for="cName">Full Name</label><input type="text" id="cName" placeholder="Your name" required /></div>
+            <div class="form-group"><label for="cPhone">Phone Number</label><input type="tel" id="cPhone" placeholder="+91 XXXXX XXXXX" required /></div>
+            <div class="form-group"><label for="cMessage">Message</label><textarea id="cMessage" rows="4" placeholder="Tell us what you're looking for..." required></textarea></div>
+            <button type="submit" class="btn-form-submit"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="footer-logo"><span class="logo-symbol">&#10022;</span><span><span class="logo-highlight">N</span>AIRAVI <span class="logo-sub">Sarees</span></span></a>
+            <p class="footer-tagline">"Elegance Woven Into Every Thread"</p>
+            <p class="footer-desc">Bringing you the finest handcrafted sarees from the heart of India. Order effortlessly via WhatsApp.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://wa.me/91XXXXXXXXXX" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="mailto:hello@nairavi.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#collections">Collections</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#new-arrivals">New Arrivals</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Categories</h4>
+            <ul class="footer-links" id="footerCatLinks">
+              <li><a href="#collections" data-cat="Silk Sarees">Silk Sarees</a></li>
+              <li><a href="#collections" data-cat="Cotton Sarees">Cotton Sarees</a></li>
+              <li><a href="#collections" data-cat="Banarasi Sarees">Banarasi Sarees</a></li>
+              <li><a href="#collections" data-cat="Kanjivaram Sarees">Kanjivaram Sarees</a></li>
+              <li><a href="#collections" data-cat="Wedding Sarees">Wedding Sarees</a></li>
+              <li><a href="#collections" data-cat="Designer Sarees">Designer Sarees</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Contact Us</h4>
+            <ul class="footer-contact-list">
+              <li><i class="fas fa-phone"></i> +91 XXXXX XXXXX</li>
+              <li><i class="fab fa-whatsapp"></i> +91 XXXXX XXXXX</li>
+              <li><i class="fas fa-envelope"></i> hello@nairavi.in</li>
+              <li><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu</li>
+            </ul>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="footer-wa-btn"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 NAIRAVI Sarees. All Rights Reserved.</p>
+        <p class="footer-design">Designed with Elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PRODUCT MODAL -->
+  <div id="productModal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Product Details">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <div class="modal-inner" id="modalInner"></div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
